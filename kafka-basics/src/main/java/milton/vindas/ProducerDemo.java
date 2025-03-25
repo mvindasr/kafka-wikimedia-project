@@ -13,7 +13,7 @@ public class ProducerDemo {
     private static final Logger log = LoggerFactory.getLogger(ProducerDemo.class.getSimpleName());
 
     public static void main(String[] args) {
-        log.info("Hello World!");
+        log.info("I am a Kafka Producer!");
 
         // create Producer Properties
         Properties properties = new Properties();
@@ -28,7 +28,7 @@ public class ProducerDemo {
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
 
         // create a Producer Record
-        ProducerRecord<String, String> producerRecord = new ProducerRecord<>("demo_java", "Hello World!");
+        ProducerRecord<String, String> producerRecord = new ProducerRecord<>("demo_java", "Testing...");
 
 
         // send data
